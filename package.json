@@ -19,5 +19,19 @@
   "bugs": {
     "url": "https://github.com/venoma333/qaiware-chatserver/issues"
   },
-  "homepage": "https://github.com/venoma333/qaiware-chatserver#readme"
+  "homepage": "https://github.com/venoma333/qaiware-chatserver#readme",
+  "devDependencies": {
+    "babel": "^5.8.21",
+    "cors": "^2.7.1",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^5.2.0",
+    "gulp-jshint": "^1.11.2",
+    "morgan": "^1.6.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "express": "^4.13.3",
+    "lodash": "^3.10.1",
+    "mongoose": "^4.1.3"
+  }
 }
