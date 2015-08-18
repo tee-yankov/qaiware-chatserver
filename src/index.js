@@ -11,5 +11,5 @@ configure(app);
 route(app);
 
 app.listen(3000, function() {
-	console.log('Server running on port http://localhost:3000/');
+	console.log(`[${new Date().toTimeString().split(' ')[0]}] Server running on port http://localhost:3000/`);
 });

@@ -1,4 +1,4 @@
-import Messages from './api/routes/messages.route';
+import Messages from './api/routes/message.route';
 
 export default function(app) {
 	app.use('/messages', Messages);

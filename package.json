@@ -23,9 +23,11 @@
   "devDependencies": {
     "babel": "^5.8.21",
     "cors": "^2.7.1",
+    "del": "^1.2.1",
     "gulp": "^3.9.0",
     "gulp-babel": "^5.2.0",
     "gulp-jshint": "^1.11.2",
+    "gulp-notify": "^2.2.0",
     "morgan": "^1.6.1"
   },
   "dependencies": {
