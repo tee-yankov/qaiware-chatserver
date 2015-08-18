@@ -1,0 +1,23 @@
+{
+  "name": "qaiware-chatserver",
+  "version": "0.0.1",
+  "description": "A simple chat server built with Node.js and Mongo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/venoma333/qaiware-chatserver.git"
+  },
+  "keywords": [
+    "chat",
+    "node.js"
+  ],
+  "author": "Theodore Yankov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/venoma333/qaiware-chatserver/issues"
+  },
+  "homepage": "https://github.com/venoma333/qaiware-chatserver#readme"
+}
