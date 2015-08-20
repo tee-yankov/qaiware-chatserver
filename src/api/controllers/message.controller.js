@@ -1,6 +1,11 @@
 import Request from '../models/request.model';
 
 export function checkPaylod(req, res) {
+	if (!req.body.payload) {
+		return res.status(412)
+			.json();
+	}
+
 	validatePaylod(req.params.action, req.body.payload)
 		.then(function(response) {
 			if (!response) {
@@ -43,6 +48,7 @@ export function requestLogger(req, res, next) {
 function validatePaylod(action, payload) {
 	const sendText = new RegExp('^.{1,160}$');
 	const sendEmotion = new RegExp('^[^0-9]{2,10}$');
+
 	return new Promise((resolve, reject) => {
 		switch (action) {
 			case 'send_text':

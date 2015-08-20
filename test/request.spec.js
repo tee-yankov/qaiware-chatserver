@@ -1,4 +1,8 @@
 import Request from '../build/api/models/request.model';
+import {
+	describe, before, it
+}
+from 'mocha';
 
 describe('Request', function() {
 
@@ -10,7 +14,7 @@ describe('Request', function() {
 			}
 
 			done();
-		})
+		});
 	});
 
 	// Save a test record in the Request collection
@@ -25,7 +29,7 @@ describe('Request', function() {
 				}
 
 				done();
-			})
+			});
 		});
 	});
 
@@ -45,5 +49,5 @@ describe('Request', function() {
 				done();
 			});
 		});
-	})
+	});
 });

@@ -50,7 +50,7 @@ gulp.task('test', ['compile:js'], function() {
 			read: false
 		})
 		.pipe(mocha({
-			reporter: 'nyan'
+			reporter: 'spec'
 		}));
 });
 
