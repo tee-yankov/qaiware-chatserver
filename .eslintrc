@@ -117,6 +117,7 @@
 		"vars-on-top": 2, // http://eslint.org/docs/rules/vars-on-top
 		"wrap-iife": [2, "any"], // http://eslint.org/docs/rules/wrap-iife
 		"yoda": 2, // http://eslint.org/docs/rules/yoda
+		"no-process-exit": 0,
 
 		/**
 		 * Style

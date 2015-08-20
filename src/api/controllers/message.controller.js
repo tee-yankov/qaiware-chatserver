@@ -28,7 +28,7 @@ export function requestLogger(req, res, next) {
 
 	Request.create({
 		type,
-		payload: null
+		payload: req.body.payload || null
 	}, function(err) {
 		if (err) {
 			return res.status(500)

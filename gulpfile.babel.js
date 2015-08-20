@@ -4,6 +4,7 @@ import babel from 'gulp-babel';
 import jshint from 'gulp-jshint';
 import notify from 'gulp-notify';
 import del from 'del';
+import mocha from 'gulp-mocha';
 
 const sourceFiles = ['src/*.js', 'src/**/*.js'];
 
@@ -42,6 +43,15 @@ gulp.task('serve:dev', ['compile:js'], function() {
 					message: 'Waiting for changes...'
 				}));
 		});
+});
+
+gulp.task('test', ['compile:js'], function() {
+	return gulp.src('test/*.spec.js', {
+			read: false
+		})
+		.pipe(mocha({
+			reporter: 'nyan'
+		}));
 });
 
 gulp.task('default', ['serve:dev']);
