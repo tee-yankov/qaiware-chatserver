@@ -6,11 +6,13 @@ import {
 from 'mocha';
 let app = {};
 
-// Start the server
+// Start the server before testing anything
 before(function() {
+	process.env.NODE_ENV = 'testing';
 	app = require('../build/index.js');
 });
 
+// Stop the server after testing is done
 after(function() {
 	app.stopServer();
 });

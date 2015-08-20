@@ -7,6 +7,9 @@ export default function(app) {
 		'extended': true
 	}));
 	app.use(bodyParser.json());
-	app.use(morgan('dev'));
 	app.use(cors());
+
+	if (process.env.NODE_ENV === 'development') {
+		app.use(morgan('dev'));
+	}
 }

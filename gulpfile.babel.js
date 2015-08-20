@@ -32,7 +32,10 @@ gulp.task('serve:dev', ['compile:js'], function() {
 			script: './build/index.js',
 			ext: 'js',
 			watch: sourceFiles,
-			tasks: ['compile:js']
+			tasks: ['compile:js'],
+			env: {
+				'NODE_ENV': 'development'
+			}
 		})
 		.on('crash', function() {
 			gulp.src('build/index.js', {
