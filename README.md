@@ -11,6 +11,7 @@
 1. Node.js >= v0.12.7
 1. MongoDB >= v3.0.5
 1. MongoDB running on port 27017 (*Configurable in src/config/mongoose.js*)
+1. Gulp >= v3.9.0 for task running
 
 ## Running the project
 1. Simply run `npm install` to install dependencies
